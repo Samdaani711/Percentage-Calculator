@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Result</title>
+</head>
+<body>
+
+<h2>Result</h2>
+
+<p style="color:red;" th:if="${error}" th:text="${error}"></p>
+
+
+<div th:if="${percentage}">
+    <p>Name: <span th:text="${name}"></span></p>
+    <p>Percentage: <span th:text="${percentage}"></span>%</p>
+</div>
+
+<a href="/">Go Back</a>
+
+</body>
+</html>
